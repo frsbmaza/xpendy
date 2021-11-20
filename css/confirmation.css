@@ -563,6 +563,13 @@ section.thank-you-popup.show .thank-you-popup-wrap {
     p.rate_bottom_text {
         margin-bottom: 15px;
     }
+    .container.confirmation_row .row {
+        flex-direction: column-reverse;
+    }
+    .container.confirmation_row .col-right-content.text-right img.img-fluid {
+        max-width: 200px;
+        margin-bottom: 55px;
+    }
 }
 
 @media screen and (max-width:991px) and (min-width:768px) {
