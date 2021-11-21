@@ -103,9 +103,16 @@
     </header>
     <section class="inner-header-section pb-100 pt-60">
         <div class="container">
-            <div class="section_header">
-                <h3>All reviews</h3>
-                <p>See all reviews we received about our services from valuable customers</p>
+            <div class="section_header reviews_header_write">
+                <div class="row">
+                    <div class="col-md-9 text-left">
+                        <h3>All reviews</h3>
+                        <p>See all reviews we received about our services from valuable customers</p>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <button type="submit" class="btn btn-submit btn-blue" id="submit_review">submit review</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -427,6 +434,30 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="thank-you-popup">
+        <div class="thank-you-popup-wrap">
+            <div class="ty_popup_content text-center">
+                <div class="ty_text">
+                    <h3>
+                        Thank you!
+                    </h3>
+                    <p>
+                        Please enter your email below and we will send you a request for writing a review by email.
+                    </p>
+                </div>
+                <div class="ty_img">
+                    <img src="img/thankyouimage.svg" class="img-fluid">
+                </div>
+                <div class="ty_form text-center">
+                    <input type="email" class="form-control" placeholder="Write your email">
+                    <button type="submit" class="btn btn-submit-email btn-blue mt-5">submit email</button>
+                </div>
+            </div>
+            <button class="close-pop">
+                <img src="img/iconclose.svg">
+            </button>
         </div>
     </section>
     <footer class="footer-section">

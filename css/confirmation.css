@@ -564,6 +564,15 @@ section.reviews {
     padding-bottom: 90px;
 }
 
+.section_header.reviews_header_write p {
+    margin-left: 0px;
+    padding-top: 10px;
+}
+
+button#submit_review {
+    margin-top: 20px;
+}
+
 @media screen and (max-width:767px) {
     .review_content {
         padding: 25px 5px;
@@ -905,6 +914,12 @@ section.reviews {
     }
     .cs_text {
         margin-left: 20px;
+    }
+    .section_header.reviews_header_write .col-md-3.text-right {
+        text-align: center !important;
+    }
+    .section_header.reviews_header_write .col-md-9.text-left {
+        text-align: center !important;
     }
 }
 

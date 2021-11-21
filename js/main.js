@@ -6,7 +6,7 @@ $(".form-item.label_wrapper.date_label_wrapper").click(function() {
 $('#submit_review').on('click', function() {
     window.setTimeout(function() {
         $(".thank-you-popup").addClass('show');
-    }, 3000); //<-- Delay in milliseconds
+    }, 100); //<-- Delay in milliseconds
 });
 
 $(".close-pop").click(function() {
