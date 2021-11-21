@@ -903,6 +903,9 @@ section.reviews {
     section.confirmation-section.pt-100.pb-120 {
         padding-bottom: 60px;
     }
+    .cs_text {
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width:991px) and (min-width:768px) {

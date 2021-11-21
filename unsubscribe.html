@@ -12,10 +12,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/confirmation.css">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 
 <body>
+    <div class="fullscreen_loader">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <header class="header-section">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
@@ -104,61 +116,222 @@
     <section class="inner-header-section pb-100 pt-60">
         <div class="container">
             <div class="section_header">
-                <h3>Uw Abonnement Bij Basic-Fit<br> Wordt Opgezegd</h3>
-                <p>Wij hebben uw opzegging in goede orde ontvangen!</p>
+                <h3>Basic-Fit Opzeggen</h3>
+            </div>
+            <div class="Privacy-button rating_button">
+                <button>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                    <span>4,5 / 5,0</span>(145 beoordelingen)
+                </button>
             </div>
         </div>
     </section>
-    <section class="confirmation-section pt-100 pb-120">
-        <div class="container confirmation_row">
+
+    <section class="informatie-section-unsubscribe">
+        <div class="container information-item">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="col-left-content">
-                        <h3 class="pb-4 mb-3">
-                            STATUS
-                        </h3>
-                        <div class="confirmation_step_wrap">
-                            <div class="confirmation_step default_step">
-                                <div class="cs_icon">
-                                    <img src="img/step-default.svg">
-                                </div>
-                                <div class="cs_text">
-                                    <p>
-                                        Binnen 3 werkdagen wordt uw brief afgeleverd om uw abonnement op te zeggen
-                                    </p>
-                                </div>
+                <div class="col-md-4">
+                    <div class="col-information position-relative">
+                        <div class="arrow-curve">
+                            <img src="img/rounder-arrow-curve.svg" class="img-flud">
+                        </div>
+                        <div class="information_image">
+                            <img src="img/wpforms-icon.svg">
+                            <!-- <img src="img/Group 1090.svg"> -->
+                        </div>
+                        <h3>Vul gegevens in</h3>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-information position-relative">
+                        <div class="arrow-curve">
+                            <img src="img/rounder-arrow-curve.svg" class="img-flud">
+                        </div>
+                        <div class="information_image">
+                            <img src="img/icon-edit.svg">
+                        </div>
+                        <h3>Brief wordt automatisch ondertekend</h3>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-information">
+                        <div class="information_image">
+                            <img src="img/globe-icon.svg">
+                        </div>
+                        <h3>Verzend de opzegbrief online</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="unsubscribe_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-form-left-unsubscribe">
+                        <div class="form-content">
+                            <h4 class="pb-2 pt-2">Vul uw gegevens in</h4>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="Voornaam">
                             </div>
-                            <div class="confirmation_step active_step">
-                                <div class="cs_icon">
-                                    <img src="img/step-active.svg">
-                                </div>
-                                <div class="cs_text">
-                                    <p>
-                                        U ontvangt binnen enkele minuten uw Track & Trace per email
-                                    </p>
-                                </div>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="Achternaam">
                             </div>
-                            <div class="confirmation_step confirm_step">
-                                <div class="cs_icon">
-                                    <img src="img/step-confirm (2).svg">
-                                </div>
-                                <div class="cs_text">
-                                    <p>
-                                        Uw brief is ingediend
-                                    </p>
-                                </div>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="Straat en huisnummer">
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="Post code">
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="Plaats">
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control" type="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="form-item">
+                                <input class="form-control" type="text" placeholder="IBAN">
+                            </div>
+                        </div>
+                        <div class="form-content border-bottom border-top">
+                            <h4>Wanneer wilt u opzeggen?</h4>
+                            <div class="form-item label_wrapper">
+                                <label><input type="radio"> Zo snel mogelijk</label>
+                            </div>
+                            <div class="form-item label_wrapper date_label_wrapper active">
+                                <input type="date" class="form-control">
+                                <p class="date_label">een datum te kiezen</p>
+                                <img src="img/dateicon.svg">
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <h4>Wilt u iets extra meedelen?</h4>
+                            <textarea class="form-control" placeholder="Type text...."></textarea>
+                        </div>
+                    </div>
+                    <div class="col-left-text-bottom">
+                        <p>
+                            Als ik verder ga dan ga ik akkoord met een eenmalige afschrijving van 29,95 voor het opzeggen van Basic-Fit.
+                        </p>
+                    </div>
+                    <div class="form-bottom-text">
+                        <p>
+                            Je persoonlijke gegevens worden gebruikt om je opzegging te verwerken, je ervaring op de website te verbeteren en voor andere doeleinden die worden beschreven in onze privacyverklaring en algemene voorwaarden.
+                        </p>
+                    </div>
+                    <div class="form-submit-button">
+                        <button class="btn btn-blue text-center btn-block confirm-unscribe">BASIC-FIT OPZEGGEN - 29,95 </button>
+                        <p>
+                            INCLUSIEF GRATIS ONTVANGSTBEVESTIGING
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-right-col">
+                        <div class="top-button-list">
+                            <button class="btn btn-blue">Basic-Fit</button>
+                            <button class="btn btn-add-more">Add More <img src="img/plusicon.svg"></button>
+                        </div>
+                        <div class="form-right-col-content">
+                            <h5>
+                                Basic-Fit opzegbrief
+                            </h5>
+
+                            <p>
+                                Basic-Fit<br>Postbus3124<br> 2130 KC Hoofddorp<br> Nederland
+                            </p>
+                            <p>
+                                18-08-2021, Plaats</p>
+
+                            <h6>AANGETEKEND: Basic-Fit opzeggen</h6>
+                            <p>
+                                Hierbij zeg ik mijn overeenkomst op met onderstaande gegevens per eerst mogelijke datum.</p>
+                            <p>
+                                Persoonsgegevens:<br> Naam: <strong>Voornaam Achternaam</strong><br> Adres: <strong>Straat en huisnummer</strong><br> Postcode + plaats: <strong>Postcode Plaats</strong><br> E-mail: <strong>example@gmail.com</strong>
+                            </p>
+                            <p>
+                                <br>Ik ontvang graag binnen 10 werkdagen een bevestiging van de opzegging per e-mail of per post.
+                            </p>
+                            <p>
+                                Met vriendelijke groeten,
+                            </p>
+                            <p class="name_text">
+                                John Abraham
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hoe-basic-fit">
+        <div class="container">
+            <div class="section_header text-center">
+                <h3>Hoe Basic-Fit opzeggen?</h3>
+                <div class="image-divider">
+                    <img src="img/Group 1002.svg" class="img-fluid">
+                </div>
+            </div>
+            <div class="faq_hoe pt-60">
+                <div class="accordion" id="faq">
+                    <div class="card">
+                        <div class="card-header" id="faqhead13">
+                            <a href="javascript:void()" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq13" aria-expanded="true" aria-controls="faq13">1. Hoe kan ik mijn sportschool abonnement bij Basic-Fit opzeggen?</a>
+                        </div>
+
+                        <div id="faq13" class="collapse" aria-labelledby="faqhead13" data-parent="#faq">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="faqhead23">
+                            <a href="javascript:void()" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq23" aria-expanded="true" aria-controls="faq23">2. Wat is de opzegtermijn voor mijn sportschool abonnement bij Basic-Fit?</a>
+                        </div>
+
+                        <div id="faq23" class="collapse" aria-labelledby="faqhead23" data-parent="#faq">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="faqhead34">
+                            <a href="javascript:void()" class="btn-header-link collapsed" data-toggle="collapse" data-target="#faq34" aria-expanded="true" aria-controls="faq34">3. Kan ik mijn sportschool abonnement bij Basic-Fit direct opzeggen?</a>
+                        </div>
+
+                        <div id="faq34" class="collapse" aria-labelledby="faqhead34" data-parent="#faq">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="col-right-content text-right">
-                        <img src="img/mailconfirm.svg" class="img-fluid">
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    <section class="message-section text-center">
+        <div class="container">
+            <div class="col-message">
+                <img src="img/mail-box.svg">
+                <h5>Staat uw vraag er niet bij? Neem gerust contact op via</h5>
+                <p>support@xpendy.com</p>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="footer-section">
         <div class="container">
             <div class="row">

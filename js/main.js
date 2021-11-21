@@ -12,3 +12,8 @@ $('#submit_review').on('click', function() {
 $(".close-pop").click(function() {
     $(".thank-you-popup").removeClass('show');
 });
+$('.confirm-unscribe').on('click', function() {
+    window.setTimeout(function() {
+        $(".fullscreen_loader").addClass('show');
+    }, 100); //<-- Delay in milliseconds
+});
