@@ -893,6 +893,16 @@ section.reviews {
         margin-top: 30px;
         margin-bottom: 40px;
     }
+    .container.confirmation_row .row {
+        flex-direction: column-reverse;
+    }
+    .container.confirmation_row .col-right-content.text-right img.img-fluid {
+        max-width: 200px;
+        margin-bottom: 40px;
+    }
+    section.confirmation-section.pt-100.pb-120 {
+        padding-bottom: 60px;
+    }
 }
 
 @media screen and (max-width:991px) and (min-width:768px) {
@@ -987,6 +997,16 @@ section.reviews {
     .reviews-pagination.text-center {
         margin-top: 35px;
         margin-bottom: 50px;
+    }
+    .container.confirmation_row .row {
+        flex-direction: column-reverse;
+    }
+    .container.confirmation_row .col-right-content.text-right img.img-fluid {
+        max-width: 400px;
+        margin-bottom: 50px;
+    }
+    section.confirmation-section.pt-100.pb-120 {
+        padding-bottom: 40px;
     }
 }
 
