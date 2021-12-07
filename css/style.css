@@ -1498,6 +1498,10 @@ section.informatie-section.faq_informatie {
     padding-bottom: 70px;
 }
 
+a.nav-link.btn.btn-blue::before {
+    display: none;
+}
+
 
 /*Mobile CSS*/
 
