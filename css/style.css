@@ -163,6 +163,12 @@ hr {
 
 /*Header CSS*/
 
+.navbar-brand img {
+    max-width: 98px;
+    width: 100%;
+    filter: grayscale(1);
+}
+
 header.header-section,
 section.hero-area-section,
 .inner-header-section {
@@ -217,6 +223,22 @@ a.nav-link::before {
 
 ul.navbar-nav.ml-auto li:first-child a::before {
     display: none;
+}
+
+.nav-link.btn.btn-blue {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px !important;
+}
+
+.col-header-left-text p {
+    margin-left: 0px !important;
+    font-size: 16px;
+}
+
+.col-md-4.text-right.d-flex.align-center {
+    justify-content: end;
+    align-items: center;
 }
 
 
@@ -1439,6 +1461,45 @@ p.date_label {
     line-height: 34px;
 }
 
+.col-subscription {
+    border: 1px solid #BEBEBE;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: .3s linear all;
+    box-shadow: 0 25px 40px rgb(110 110 110 / 0%);
+    cursor: pointer;
+}
+
+.col-subscription:hover {
+    box-shadow: 0 25px 40px rgb(110 110 110 / 10%);
+    border-color: transparent;
+}
+
+.col-subscription h4 {
+    color: #2C2C2C;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.col-subscription p {
+    color: #505050;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+section.informatie-section.faq_informatie {
+    padding-top: 120px;
+}
+
+section.informatie-section.faq_informatie {
+    padding-top: 130px;
+    padding-bottom: 70px;
+}
+
 
 /*Mobile CSS*/
 
@@ -2080,6 +2141,34 @@ p.date_label {
         left: 0px;
         top: 12px;
         background-size: contain;
+    }
+    .col-md-4.text-right.d-flex.align-center {
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .col-header-left-text {
+        text-align: center;
+    }
+    .col-subscription {
+        border: 1px solid #BEBEBE;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 30px;
+        transition: .3s linear all;
+        box-shadow: 0 25px 40px rgb(110 110 110 / 0%);
+    }
+    .col-subscription p {
+        color: #505050;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 26px;
+        margin-bottom: 0px;
+        margin-top: -8px;
+    }
+    section.informatie-section.faq_informatie {
+        padding-top: 70px;
+        padding-bottom: 40px;
     }
 }
 
