@@ -163,9 +163,7 @@ hr {
 
 /*Header CSS*/
 
-.navbar-brand img {
-    max-width: 98px;
-    width: 100%;
+.col-header-right img {
     filter: grayscale(1);
 }
 
@@ -2169,6 +2167,13 @@ section.informatie-section.faq_informatie {
     section.informatie-section.faq_informatie {
         padding-top: 70px;
         padding-bottom: 40px;
+    }
+    a.nav-link.btn.btn-blue {
+        font-size: 14px;
+        padding: 10px 10px !important;
+    }
+    a.nav-link.btn.btn-blue::before {
+        display: none;
     }
 }
 
