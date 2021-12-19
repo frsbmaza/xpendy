@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebate</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" integrity="sha512-FKK36sqWcrWs0CJeDVz3UhCFH5XnRAU9fijKZmn2760FDeYmBB7oos2E4V2vS9KjuKDy5rXZa6L1gIjnsDJ9bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light MobileOnly">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/RebateKey.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse Mobile_only" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="extension.html">Chrome Extension</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sigin">SIGN IN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-success" href="#" id="signup">SIGN UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light DeskOnly">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/RebateKey.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse desktop_only">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="extension.html">Chrome Extension</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sigin">SIGN IN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-success" href="#" id="signup">SIGN UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="single-product-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="slider_style_two">
+                        <div id="sync1" class="owl-carousel">
+                            <div class="item style2slide" data-hash="one">
+                                <div class="item-icon">
+                                    <a href="assets/img/Mask Group 70.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                </div>
+                                <img src="assets/img/Mask Group 70.png" alt="image description" class="img-responsive">
+                            </div>
+                            <div class="item style2slide" data-hash="two">
+                                <div class="item-icon">
+                                    <a href="assets/img/Mask Group 71.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                </div>
+                                <img src="assets/img/Mask Group 71.png" alt="image description" class="img-responsive">
+                            </div>
+                            <div class="item style2slide" data-hash="three">
+                                <div class="item-icon">
+                                    <a href="assets/img/Mask Group 72.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                </div>
+                                <img src="assets/img/Mask Group 72.png" alt="image description" class="img-responsive">
+                            </div>
+                            <div class="item style2slide" data-hash="four">
+                                <div class="item-icon">
+                                    <a href="assets/img/Mask Group 73.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                </div>
+                                <img src="assets/img/Mask Group 73.png" alt="image description" class="img-responsive">
+                            </div>
+                        </div>
+                        <div id="sync2" class="owl-carousel carousel_thumb">
+                            <div class="item" data-hash="one">
+                                <a href="#one">
+                                    <img src="assets/img/Mask Group 70.png" alt="image description" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item" data-hash="two">
+                                <a href="#two">
+                                    <img src="assets/img/Mask Group 71.png" alt="image description" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item" data-hash="three">
+                                <a href="#three">
+                                    <img src="assets/img/Mask Group 72.png" alt="image description" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item" data-hash="four">
+                                <a href="#four">
+                                    <img src="assets/img/Mask Group 73.png" alt="image description" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="inner-page-left">
+                        <div class="product-content">
+                            <p class="breadcumb">Home > Featured product > Details</p>
+                        </div>
+                        <div class="product-discount">
+                            <h6>Rebate: 79%</h6>
+                        </div>
+                        <div class="product-heading">
+                            <h2>NeoHealth Lower Back Brace with Pulley System, Breathable Back Support Belt for Men and Women, ANY SIZE
+                            </h2>
+                        </div>
+                        <div class="main-description">
+                            <h5 class="price_single"><del>$17.38</del>$2.38</h5>
+                        </div>
+                        <div class="button-item">
+                            <button class="amazon-btn">
+                                <i class="fa fa-amazon"></i> See this Ultrasonic Pest Repeller on <b>Amazon</b> <i class="fa fa-angle-right"></i>
+                            </button>
+                            <br>
+                            <button class="simple-btn">
+                                <i class="fa fa-folder-o"></i> Get more Rebates up to 100% for <b>Patio, Lawn & Garden</b> <i class="fa fa-angle-right"></i>
+                            </button>
+                            <br>
+                            <button class="button-buy-product">
+                                buy this product
+                            </button>
+                        </div>
+                        <div class="inner-page-left-paragraph">
+                            <p>Note: You have to register with <a href="#">RebateKey.com</a> to be able to claim a rebate for Ultrasonic Pest Repeller. Rebates are guaranteed as long as you follow the rules.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-content">
+        <div class="container">
+            <div class="product-content-description">
+                <div class="product-description">
+                    <h3>Product features</h3>
+                    <p>
+                        As technology greatly advances and the economic demand increases, parents and caregivers often rely on gadgets and devices to entertain and keep the little ones busy. Minimize your child’s exposure to certain gadgets and technology and maximize their
+                        outdoor experience. And what better way to do this but with Jungle Swings Sling Swing Set!
+                    </p>
+                    <p>
+                        - 【 GENTLE&PAINLESS&SAFE 】 The knife net facial hair removal for women fits your skin and gently strokes to trim hair without pulling, leaving the skin smooth without stubble, scratches or redness. the shaver for women blade is sharp and rounded low-friction
+                        protection heads prevents skin damage. Give you a refreshing experience and give back your baby-like skin.
+                    </p>
+                    <p>
+                        - 【 QUIET&RESPECT YOUR PRIVACY 】 Kaphio face shavers for women working sound is just like the sound when you turn a book, making you beautiful quietly. Don't be embarrassed and use it as you like. Release your sudden beauty.
+                    </p>
+                    <p>
+                        - 【EASY CLEANING 】 Women's shaving detachable blade head can be cleaned under running water, making clean up a breeze. There is also a small brush to assist in cleaning.
+                    </p>
+                </div>
+                <div class="product-description">
+                    <h3>Product Specifications:</h3>
+                    <p>
+                        - Material: Polymer<br> - Inclusions:<br> - 4 Straps <br> - 4 M8 Carabiners<br> - 2 Pack Sling Swing Seats<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews about-reviews">
+        <div class="container">
+            <div class="review-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="reviews-content">
+                            <h6>SEE WHAT PEOPLE SAYING</h6>
+                            <h3>Customer reviews</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="reviews-button">
+                            <a href="testimonial.html" class="btn btn-orange">VIEW ALL REVIEWS </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider">
+                <div class="owl-carousel owl-theme" id="testimonial-slider">
+                    <div class="item">
+                        <div class="testimonial-slider-content">
+                            <div class="testimonial-content-top">
+                                <div class="heading-testimonial-image">
+                                    <img src="assets/img/Ellipse 3.svg">
+                                </div>
+                                <div class="heading-testimonial-name">
+                                    <h5>Mansur Helal</h5>
+                                    <h6>Amazon Customer</h6>
+                                </div>
+                                <div class="heading-testimonial-icon_Pos">
+                                    <img src="assets/img/Icon material-format-quote.svg">
+                                </div>
+                            </div>
+                            <div class="heading-testimonial-description">
+                                <p>
+                                    Lorem ipsum dummy text are used in this section so replace your original review text here. Lorem dummy text are used in this section ipsum text so replace your original review text here. Lorem ip dummy text are used in this section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-slider-content">
+                            <div class="testimonial-content-top">
+                                <div class="heading-testimonial-image">
+                                    <img src="assets/img/Ellipse 3.svg">
+                                </div>
+                                <div class="heading-testimonial-name">
+                                    <h5>Mansur Helal</h5>
+                                    <h6>Amazon Customer</h6>
+                                </div>
+                                <div class="heading-testimonial-icon_Pos">
+                                    <img src="assets/img/Icon material-format-quote.svg">
+                                </div>
+                            </div>
+                            <div class="heading-testimonial-description">
+                                <p>
+                                    Lorem ipsum dummy text are used in this section so replace your original review text here. Lorem dummy text are used in this section ipsum text so replace your original review text here. Lorem ip dummy text are used in this section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-slider-content">
+                            <div class="testimonial-content-top">
+                                <div class="heading-testimonial-image">
+                                    <img src="assets/img/Ellipse 3.svg">
+                                </div>
+                                <div class="heading-testimonial-name">
+                                    <h5>Mansur Helal</h5>
+                                    <h6>Amazon Customer</h6>
+                                </div>
+                                <div class="heading-testimonial-icon_Pos">
+                                    <img src="assets/img/Icon material-format-quote.svg">
+                                </div>
+                            </div>
+                            <div class="heading-testimonial-description">
+                                <p>
+                                    Lorem ipsum dummy text are used in this section so replace your original review text here. Lorem dummy text are used in this section ipsum text so replace your original review text here. Lorem ip dummy text are used in this section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-slider-content">
+                            <div class="testimonial-content-top">
+                                <div class="heading-testimonial-image">
+                                    <img src="assets/img/Ellipse 3.svg">
+                                </div>
+                                <div class="heading-testimonial-name">
+                                    <h5>Mansur Helal</h5>
+                                    <h6>Amazon Customer</h6>
+                                </div>
+                                <div class="heading-testimonial-icon_Pos">
+                                    <img src="assets/img/Icon material-format-quote.svg">
+                                </div>
+                            </div>
+                            <div class="heading-testimonial-description">
+                                <p>
+                                    Lorem ipsum dummy text are used in this section so replace your original review text here. Lorem dummy text are used in this section ipsum text so replace your original review text here. Lorem ip dummy text are used in this section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-slider-content">
+                            <div class="testimonial-content-top">
+                                <div class="heading-testimonial-image">
+                                    <img src="assets/img/Ellipse 3.svg">
+                                </div>
+                                <div class="heading-testimonial-name">
+                                    <h5>Mansur Helal</h5>
+                                    <h6>Amazon Customer</h6>
+                                </div>
+                                <div class="heading-testimonial-icon_Pos">
+                                    <img src="assets/img/Icon material-format-quote.svg">
+                                </div>
+                            </div>
+                            <div class="heading-testimonial-description">
+                                <p>
+                                    Lorem ipsum dummy text are used in this section so replace your original review text here. Lorem dummy text are used in this section ipsum text so replace your original review text here. Lorem ip dummy text are used in this section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-slider-content">
+                            <div class="testimonial-content-top">
+                                <div class="heading-testimonial-image">
+                                    <img src="assets/img/Ellipse 3.svg">
+                                </div>
+                                <div class="heading-testimonial-name">
+                                    <h5>Mansur Helal</h5>
+                                    <h6>Amazon Customer</h6>
+                                </div>
+                                <div class="heading-testimonial-icon_Pos">
+                                    <img src="assets/img/Icon material-format-quote.svg">
+                                </div>
+                            </div>
+                            <div class="heading-testimonial-description">
+                                <p>
+                                    Lorem ipsum dummy text are used in this section so replace your original review text here. Lorem dummy text are used in this section ipsum text so replace your original review text here. Lorem ip dummy text are used in this section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-slider-content">
+                            <div class="testimonial-content-top">
+                                <div class="heading-testimonial-image">
+                                    <img src="assets/img/Ellipse 3.svg">
+                                </div>
+                                <div class="heading-testimonial-name">
+                                    <h5>Mansur Helal</h5>
+                                    <h6>Amazon Customer</h6>
+                                </div>
+                                <div class="heading-testimonial-icon_Pos">
+                                    <img src="assets/img/Icon material-format-quote.svg">
+                                </div>
+                            </div>
+                            <div class="heading-testimonial-description">
+                                <p>
+                                    Lorem ipsum dummy text are used in this section so replace your original review text here. Lorem dummy text are used in this section ipsum text so replace your original review text here. Lorem ip dummy text are used in this section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-button mobileOnly">
+                <a href="testimonial.html" class="btn btn-orange">VIEW ALL REVIEWS </a>
+            </div>
+        </div>
+    </section>
+    <section class="interesting">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="interesting-content">
+                        <h6>interesting, right?</h6>
+                        <h4>Be part of RebateKey</h4>
+                        <p>Join tens of thousands of smart and happy shoppers! What are you waiting for?</p>
+                        <div class="interesting-button">
+                            <a href="#" class="btn btn-orange">START NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="interesting-image">
+                        <img src="assets/img/Group 10789.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-top-row">
+                <div class="col-md-5">
+                    <div class="footer-logo">
+                        <h5>RebateKey</h5>
+                        <p>Join tens of thousands of smart and happy shoppers! What are you waiting for? Join tens of thousands of smart and happy shoppers! What are you waiting for?</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h5>Get Started</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Buyer Sign In</a>
+                            </li>
+                            <li>
+                                <a href="#">Buyer Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="#">Amazon Seller</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h5>Company</h5>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h5>Help</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom">
+                <div class="col-md-6 text-left">
+                    <div class="footer-devider">
+                        <p>Copyrights © Bobbooster.com 2021</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <div class="footer-devider-right">
+                        <p>Terms of Use - Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" integrity="sha512-5nBm8I4981vJDHhtHCaImHU+wcnmbheiFpmE03QLuYshaimnRk15jbW6sNK4/URdyqohIUQzNLsqdZ7bB3l5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="assets/js/index.js"></script>
+    <script>
+        $('#sync1').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 1,
+            dots: false,
+            URLhashListener: true
+        })
+        $('#sync2').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 4,
+            dots: false,
+            center: true,
+            stagePadding: 0,
+            URLhashListener: true,
+            responsive: {
+                // breakpoint from 0 up
+                0: {
+                    items: 4,
+                },
+                // breakpoint from 480 up
+                480: {
+                    items: 4,
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 4,
+                },
+                // breakpoint from 768 up
+                1170: {
+                    items: 4,
+                }
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+        });
+    </script>
+</body>
+
+</html>
